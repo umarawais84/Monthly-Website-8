@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    
+
     const grid = document.getElementById('rosterGrid')
 
     const render = list => {
@@ -15,9 +15,9 @@ document.addEventListener('DOMContentLoaded', () => {
                         <h5 class="card-title mb-1">${p.firstName} ${p.lastName}</h5>
                         <div class="badge badge-position badge-pos-${p.position}">${p.position}</div>
                         <p class="small text-muted mb-0">Age ${p.age}</p>
+                        <button type="button" class="btn btn-primary">Click Me!</button>
                     </div>
-                </div>
-            </div>            
+                </div>        
             `
             grid.appendChild(col)
         })
