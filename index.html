@@ -1,41 +1,74 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <title>Team Roster</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <link rel="stylesheet" href="style.css">
-
-    <!-- Bootstrap CSS v5.2.1 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marlboro Track Team Roster</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <!-- place navbar here -->
-    </header>
-    <main>
-        <div class="header">
-        <h1>Marlboro Highschool Distance Team</h1>
-        </div>
-        <div id="rosterGrid" class="row g-3">
-    </main>
-    <footer>
-        <!-- place footer here -->
-    </footer>
-    <!-- Bootstrap JavaScript Libraries -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
+  <header class="bg-dark text-white text-center py-4">
+    <h1>Marlboro High School Track & Field Team</h1>
+  </header>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-        crossorigin="anonymous"></script>
-    <script src="players.js"></script>
-    <script src="roster.js"></script>
+  <main class="container my-4">
+    <div class="row" id="rosterContainer"></div>
+  </main>
+
+  <script>
+    class TeamMember {
+      constructor(firstName, lastName, role, age, image, detail) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.role = role;
+        this.age = age;
+        this.image = image;
+        this.detail = detail;
+      }
+
+      createCard() {
+        const col = document.createElement('div');
+        col.className = 'col-12 col-sm-6 col-lg-4 mb-4';
+
+        col.innerHTML = `
+          <div class="card h-100 shadow">
+            <img src="${this.image}" class="card-img-top" alt="${this.firstName} ${this.lastName}">
+            <div class="card-body text-center">
+              <h5 class="card-title">${this.firstName} ${this.lastName}</h5>
+              <p class="card-text text-muted">${this.role} | Age: ${this.age}</p>
+              <button class="btn btn-outline-primary" onclick="toggleDetail(this)">More Info</button>
+              <p class="mt-3 text-start d-none">${this.detail}</p>
+            </div>
+          </div>
+        `;
+
+        return col;
+      }
+    }
+
+    function toggleDetail(button) {
+      const detailParagraph = button.nextElementSibling;
+      detailParagraph.classList.toggle('d-none');
+      button.textContent = detailParagraph.classList.contains('d-none') ? 'More Info' : 'Less Info';
+    }
+
+    const teamMembers = [
+      new TeamMember("Umar", "Awais", "5K Runner", 16, "imgs/umar.jpeg", "Captain of the distance team, top NJ junior."),
+      new TeamMember("Wyatt", "Bedor", "800m Specialist", 16, "imgs/wyatt.jpeg", "Known for his strong kick and leadership skills."),
+      new TeamMember("Richard", "Riopel", "1600m Runner", 16, "imgs/richard.jpeg", "Ranked in Monmouth County's top milers."),
+      new TeamMember("Matthew", "Steinway", "1600m Runner", 15, "https://picsum.photos/200", "Youngest varsity member, rising star."),
+      new TeamMember("Rohan", "Shah", "3200m Runner", 17, "https://picsum.photos/200", "Endurance king with a sub-10 3200m."),
+    ];
+
+    const container = document.getElementById('rosterContainer');
+    teamMembers.forEach(member => {
+      container.appendChild(member.createCard());
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
