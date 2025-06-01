@@ -38,5 +38,12 @@ const team = {
       age: 17,
       photo_1: "https://picsum.photos/200/300"
     }
+    {
+      firstName: "Joseph",
+      lastName: "Friedman",
+      position: "1600",
+      age: 16,
+      photo_1: "https://picsum.photos/200/300"
+    }
   ]
 };

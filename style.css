@@ -3,6 +3,21 @@
   --mustang-gold: #FFC72C;  /* Gold */
 }
 
+/* Make the “active” nav-link text gold (yellow) */
+.nav-link.active {
+  color: var(--mustang-gold) !important;
+}
+
+/* existing rule for .nav-link.active */
+.nav-link.active {
+  color: var(--mustang-gold) !important;
+}
+
+/* new rule for the brand link on index.html */
+.navbar-brand.active {
+  color: var(--mustang-gold) !important;
+}
+
 /* Navbar background */
 .bg-maroon {              /* rename or alias if you like */
   background-color: var(--mustang-navy) !important;
