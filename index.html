@@ -2,224 +2,57 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Marlboro Mustangs Track Team</title>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>New York Knicks Fan Site</title>
   <!-- Bootstrap CSS -->
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
     rel="stylesheet"
   />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <!-- NAVBAR -->
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-maroon">
-      <div class="container">
-        <a class="navbar-brand active" href="index.html">Mustangs Track</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="roster.html">Roster</a>
-            </li>
-          </ul>
-        </div>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-knicks-blue">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Knicks Fan Site</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="roster.html">Roster</a>
+          </li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="bg-knicks-blue text-white text-center py-5">
+    <div class="container">
+      <h1 class="display-4">Welcome to the New York Knicks Fan Site</h1>
+      <p class="lead">All things about your favorite NBA team</p>
+      <a href="about.html" class="btn btn-primary btn-lg mt-3">Learn More</a>
+    </div>
   </header>
-
-  <!-- HERO / TOP BANNER -->
-  <section class="hero text-center text-dark d-flex align-items-center">
-    <div class="container">
-      <h1 class="display-4 mb-3">Welcome to the Mustangs Track Team</h1>
-      <p class="lead mb-4">Pride • Power • Performance</p>
-      <a href="roster.html" class="btn btn-maroon btn-lg">Meet the Team</a>
-    </div>
-  </section>
-
-  <!-- ABOUT PREVIEW -->
-  <section class="py-5">
-    <div class="container">
-      <h2 class="mb-3 text-center text-navy">Who We Are</h2>
-      <p class="text-center text-muted mb-4">
-        The Marlboro Mustangs Track Team is dedicated to developing champions
-        on and off the track. Our athletes compete in sprints, distance,
-        jumps, and throws while upholding the Mustangs’ tradition of teamwork,
-        discipline, and academic excellence.
-      </p>
-      <div class="text-center">
-        <a href="about.html" class="btn btn-outline-primary">Learn More About Us</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- UPCOMING MEETS -->
-  <section class="bg-light py-5">
-    <div class="container">
-      <h2 class="mb-4 text-center text-navy">Upcoming Meets</h2>
-      <div class="row g-4">
-        <!-- Meet 1: A-North Divisional -->
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body">
-              <h5 class="card-title text-navy">A‐North Divisional</h5>
-              <p class="card-text text-muted mb-1">
-                <strong>Date:</strong> March 29, 2025
-              </p>
-              <p class="card-text text-muted mb-1">
-                <strong>Location:</strong> Lincroft, NJ
-              </p>
-              <a href="#" class="btn btn-maroon btn-sm mt-2">Details</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Meet 2: Rebel Frosh‐Soph Opener -->
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body">
-              <h5 class="card-title text-navy">Rebel Frosh‐Soph Opener</h5>
-              <p class="card-text text-muted mb-1">
-                <strong>Date:</strong> April 4, 2025
-              </p>
-              <p class="card-text text-muted mb-1">
-                <strong>Location:</strong> Howell, NJ
-              </p>
-              <a href="#" class="btn btn-maroon btn-sm mt-2">Details</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Meet 3: East Brunswick Invitational -->
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body">
-              <h5 class="card-title text-navy">East Brunswick Invitational</h5>
-              <p class="card-text text-muted mb-1">
-                <strong>Date:</strong> April 12, 2025
-              </p>
-              <p class="card-text text-muted mb-1">
-                <strong>Location:</strong> East Brunswick, NJ
-              </p>
-              <a href="#" class="btn btn-maroon btn-sm mt-2">Details</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Meet 4: Monmouth County Championships -->
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body">
-              <h5 class="card-title text-navy">Monmouth County Championships</h5>
-              <p class="card-text text-muted mb-1">
-                <strong>Date:</strong> May 6, 2025
-              </p>
-              <p class="card-text text-muted mb-1">
-                <strong>Location:</strong> Eatontown, NJ
-              </p>
-              <a href="#" class="btn btn-maroon btn-sm mt-2">Details</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Meet 5: NJSIAA Sectionals Central Groups 1 & 4 -->
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body">
-              <h5 class="card-title text-navy">NJSIAA Sectionals (Central Groups 1 & 4)</h5>
-              <p class="card-text text-muted mb-1">
-                <strong>Date:</strong> May 16, 2025
-              </p>
-              <p class="card-text text-muted mb-1">
-                <strong>Location:</strong> Hillsborough, NJ
-              </p>
-              <a href="#" class="btn btn-maroon btn-sm mt-2">Details</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Meet 6: NJSIAA Group Championships (1 & 4) -->
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body">
-              <h5 class="card-title text-navy">NJSIAA Group Championships ‐ 1 & 4</h5>
-              <p class="card-text text-muted mb-1">
-                <strong>Date:</strong> May 30, 2025
-              </p>
-              <p class="card-text text-muted mb-1">
-                <strong>Location:</strong> Somerset, NJ
-              </p>
-              <a href="#" class="btn btn-maroon btn-sm mt-2">Details</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FEATURE HIGHLIGHTS -->
-  <section class="py-5">
-    <div class="container">
-      <h2 class="mb-4 text-center text-navy">Team Values</h2>
-      <div class="row text-center g-4">
-        <div class="col-12 col-md-4">
-          <img
-            src="https://via.placeholder.com/100"
-            alt="Commitment Icon"
-            class="mb-3"
-          />
-          <h5 class="text-navy">Commitment</h5>
-          <p class="text-muted">
-            Every Mustang shows up for practice, pushes limits, and supports teammates.
-          </p>
-        </div>
-        <div class="col-12 col-md-4">
-          <img
-            src="https://via.placeholder.com/100"
-            alt="Excellence Icon"
-            class="mb-3"
-          />
-          <h5 class="text-navy">Excellence</h5>
-          <p class="text-muted">
-            We strive for personal bests—on the track and in the classroom.
-          </p>
-        </div>
-        <div class="col-12 col-md-4">
-          <img
-            src="https://via.placeholder.com/100"
-            alt="Teamwork Icon"
-            class="mb-3"
-          />
-          <h5 class="text-navy">Teamwork</h5>
-          <p class="text-muted">
-            Our success is built on trust, communication, and mutual respect.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="text-center py-5 bg-maroon text-white">
-    <div class="container">
-      <h3 class="mb-3">Interested in Joining the Mustangs?</h3>
-      <p class="mb-4">
-        Tryouts begin August 15th, 2025. Get in touch with Coach Illif for details.
-      </p>
-    </div>
-  </footer>
+  
+  <!-- Optional Footer or Additional Content Could Go Here -->
 
   <!-- Bootstrap JS Bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>

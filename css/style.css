@@ -1,0 +1,81 @@
+/* Knicks Colors */
+.bg-knicks-blue {
+  background-color: #006bb6 !important;
+}
+.text-knicks-orange {
+  color: #f58426 !important;
+}
+.bg-knicks-orange {
+  background-color: #f58426 !important;
+}
+
+/* Override Bootstrap primary button to match Knicks theme */
+.btn-primary {
+  background-color: #006bb6;
+  border-color: #006bb6;
+}
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #f58426;
+  border-color: #f58426;
+}
+
+/* Navigation link styles */
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.8);
+}
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #ffffff;
+}
+
+/* Card Customization */
+.card {
+  border-radius: 0.75rem;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+/* Player Position Badge */
+.badge-position {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: #f58426;
+  color: #ffffff;
+  border-radius: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Small text under player name */
+.card-body .small {
+  color: #6c757d;
+}
+
+/* Responsive images inside cards */
+.card img {
+  object-fit: cover;
+  height: 200px;
+}
+
+/* Customize header spacing */
+header {
+  background-size: cover;
+  background-position: center;
+}
+
+/* Additional spacing adjustments */
+h2 {
+  font-weight: 700;
+}
+
+/* Small shadow under the roster section */
+#rosterGrid {
+  margin-top: 1rem;
+}

@@ -1,41 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>About Us - Mustangs Track</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About the New York Knicks</title>
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-maroon">
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-knicks-blue">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Mustangs Track</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <a class="navbar-brand" href="index.html">Knicks Fan Site</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="roster.html">Roster</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="roster.html">Roster</a>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
 
-
-  <main class="container py-5">
-    <h2>About the Marlboro Mustangs</h2>
-    <p>The Marlboro Mustangs Track Team has a long history of excellence. Established in 1950, our athletes have consistently competed at the state level, earning numerous championships and records.</p>
-    <p>Our mission is to foster teamwork, discipline, and sportsmanship both on and off the track. Whether you’re a sprinter, distance runner, or field event athlete, there’s a place for you in our Mustang family.</p>
+  <!-- Main Content -->
+  <main class="container my-5">
+    <h2 class="text-center text-knicks-orange mb-4">About the New York Knicks</h2>
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <p>
+          The New York Knicks are one of the oldest teams in the National Basketball Association,
+          having been founded in 1946. Since their inception, they’ve played in Madison Square
+          Garden and have become an iconic franchise in the heart of New York City.
+        </p>
+        <p>
+          Over the decades, the Knicks have captured two NBA championships (1970, 1973) and have
+          produced legendary talents like Walt “Clyde” Frazier, Patrick Ewing, and Willis Reed.
+          The team’s signature blue and orange colors represent the vibrant spirit of New York.
+        </p>
+        <p>
+          In recent years, the roster has seen a revival with exciting young talent and veteran
+          leadership. Fans continue to flock to Madison Square Garden, making it one of the most
+          electric arenas in all of sports.
+        </p>
+      </div>
+    </div>
   </main>
 
+  <!-- Optional Footer or Additional Content Could Go Here -->
 
-  <footer class="py-3 text-center">
-    <small>&copy; 2025 Marlboro Mustangs Track Team</small>
-  </footer>
-
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
