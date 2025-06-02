@@ -1,5 +1,3 @@
-// js/detail.js
-
 function showPlayerModal(player) {
   // Only show the player’s name and fun fact (detail)
   document.getElementById('modalName').textContent = 
