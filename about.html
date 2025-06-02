@@ -15,7 +15,7 @@
   <!-- Navigation Bar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-knicks-blue">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Knicks Fan Site</a>
+      <a class="navbar-brand fw-bold" href="index.html">Knicks Fan Site</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -43,31 +43,122 @@
     </div>
   </nav>
 
-  <!-- Main Content -->
+  <!-- Page Header -->
+  <header class="bg-knicks-orange text-white text-center py-5">
+    <div class="container">
+      <h1 class="display-4 fw-bold">About the New York Knicks</h1>
+      <p class="lead">Discover the legacy, champions, and future stars of the Knicks.</p>
+    </div>
+  </header>
+
+  <!-- History, Legends & Modern Era Sections -->
   <main class="container my-5">
-    <h2 class="text-center text-knicks-orange mb-4">About the New York Knicks</h2>
-    <div class="row">
-      <div class="col-lg-8 mx-auto">
-        <p>
-          The New York Knicks are one of the oldest teams in the National Basketball Association,
-          having been founded in 1946. Since their inception, they’ve played in Madison Square
-          Garden and have become an iconic franchise in the heart of New York City.
-        </p>
-        <p>
-          Over the decades, the Knicks have captured two NBA championships (1970, 1973) and have
-          produced legendary talents like Walt “Clyde” Frazier, Patrick Ewing, and Willis Reed.
-          The team’s signature blue and orange colors represent the vibrant spirit of New York.
-        </p>
-        <p>
-          In recent years, the roster has seen a revival with exciting young talent and veteran
-          leadership. Fans continue to flock to Madison Square Garden, making it one of the most
-          electric arenas in all of sports.
-        </p>
+    <div class="row g-4">
+      <!-- History Card -->
+      <div class="col-md-4">
+        <div class="card text-white bg-knicks-blue h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Rich History</h5>
+            <p class="card-text">
+              Established in 1946 as one of the NBA’s charter franchises, the Knicks have played
+              at Madison Square Garden for over 70 years—cementing their place in New York City culture.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Championships & Legends Card -->
+      <div class="col-md-4">
+        <div class="card text-white bg-knicks-orange h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Championships & Legends</h5>
+            <ul class="list-unstyled">
+              <li>• NBA Champions: 1970, 1973</li>
+              <li>• Walt “Clyde” Frazier: Iconic floor general</li>
+              <li>• Patrick Ewing: Franchise cornerstone</li>
+              <li>• Willis Reed: 1970 Finals MVP</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modern Era Card -->
+      <div class="col-md-4">
+        <div class="card bg-light h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title text-knicks-blue">Modern Era</h5>
+            <p class="card-text text-muted">
+              Recent seasons have brought new stars like Jalen Brunson and Mikal Bridges, 
+              reigniting fan passion and hope for another championship run.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Franchise Timeline Section -->
+    <div class="mt-5">
+      <h2 class="text-center text-knicks-blue mb-4">Franchise Timeline</h2>
+      <div class="row g-3">
+        <div class="col-lg-3 col-md-6">
+          <div class="p-3 border rounded bg-white h-100 shadow-sm">
+            <h6 class="fw-semibold text-knicks-orange">1946</h6>
+            <p class="mb-0">Knicks founded as a charter member of the NBA.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="p-3 border rounded bg-white h-100 shadow-sm">
+            <h6 class="fw-semibold text-knicks-orange">1970</h6>
+            <p class="mb-0">First NBA Championship, led by Willis Reed and Walt Frazier.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="p-3 border rounded bg-white h-100 shadow-sm">
+            <h6 class="fw-semibold text-knicks-orange">1994–1999</h6>
+            <p class="mb-0">Patrick Ewing era: multiple playoff runs and deep postseason runs.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="p-3 border rounded bg-white h-100 shadow-sm">
+            <h6 class="fw-semibold text-knicks-orange">2021–Present</h6>
+            <p class="mb-0">Rebuild pays off: Playoff return in 2021 and resurgence under new core.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mission & Fan Engagement Section -->
+    <div class="mt-5">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <div class="p-4 bg-knicks-blue text-white rounded h-100 shadow-sm">
+            <h4 class="fw-semibold">Our Mission</h4>
+            <p class="mb-0">
+              To celebrate the New York Knicks’ legacy, showcase current roster news, and foster
+              a community of dedicated fans who Bleed Blue & Orange.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="p-4 bg-knicks-orange text-white rounded h-100 shadow-sm">
+            <h4 class="fw-semibold">Fan Engagement</h4>
+            <ul class="mb-0">
+              <li>• Live game recaps and highlights</li>
+              <li>• Exclusive interviews with players and staff</li>
+              <li>• Community events and watch parties at the Garden</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </main>
 
-  <!-- Optional Footer or Additional Content Could Go Here -->
+  <!-- Footer -->
+  <footer class="bg-knicks-blue text-white py-4">
+    <div class="container text-center">
+      <small>&copy; 2024 Knicks Fan Site. All Rights Reserved.</small>
+    </div>
+  </footer>
 
   <!-- Bootstrap JS Bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
