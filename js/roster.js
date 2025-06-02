@@ -1,3 +1,5 @@
+// js/roster.js
+
 document.addEventListener('DOMContentLoaded', () => {
   const grid = document.getElementById('rosterGrid');
 
@@ -29,12 +31,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   };
 
+  // Render using team.players instead of a bare players array
   render(team.players);
 
+  // Single listener to catch clicks on any “More Info” button
   grid.addEventListener('click', function (e) {
     if (e.target.classList.contains('show-info-btn')) {
-      const index = e.target.getAttribute('data-player-index');
-      const player = players[index];
+      const index = Number(e.target.getAttribute('data-player-index'));
+      // Use team.players here
+      const player = team.players[index];
       showPlayerModal(player);
     }
   });
