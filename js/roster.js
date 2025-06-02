@@ -49,5 +49,5 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   };
 
-  render(players);
+  render(team.players);
 });
