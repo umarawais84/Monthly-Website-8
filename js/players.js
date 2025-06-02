@@ -126,44 +126,44 @@ const players = [
     lastName: "Shamet",
     position: "SG",
     age: 28,
-    photo_1: "https://via.placeholder.com/200x300?text=Landry+Shamet",
+    photo_1: "imgs/landry.webp",
     photo_2: "https://via.placeholder.com/200x300?text=Shamet+Alt",
     detail: "NBA 3-point contest participant (2021). Career 3P %: 39.1."
   },
   {
-    firstName: "Karl-Anthony",
-    lastName: "Towns",
-    position: "C",
-    age: 29,
-    photo_1: "https://via.placeholder.com/200x300?text=Karl-Anthony+Towns",
-    photo_2: "https://via.placeholder.com/200x300?text=Towns+Alt",
-    detail: "2021 MVP. Career 30.7 PPG in Feb 2022. Classic stretch‐five skillset."
-  },
-  {
-    firstName: "P.J.",
-    lastName: "Tucker",
-    position: "PF",
-    age: 40,
-    photo_1: "https://via.placeholder.com/200x300?text=P.J.+Tucker",
-    photo_2: "https://via.placeholder.com/200x300?text=Tucker+Alt",
-    detail: "Known for offensive rebounds: 2.3 ORPG career. Defensive stopper at age 39."
-  },
-  {
-    firstName: "Anton",
-    lastName: "Watson",
-    position: "PF",
-    age: 24,
-    photo_1: "https://via.placeholder.com/200x300?text=Anton+Watson",
-    photo_2: "https://via.placeholder.com/200x300?text=Watson+Alt",
-    detail: "Stellar college shot blocker at Gonzaga: 2.0 BPG (junior year). Sweeping PNR defender."
-  },
-  {
-    firstName: "Delon",
-    lastName: "Wright",
-    position: "PG",
-    age: 33,
-    photo_1: "https://via.placeholder.com/200x300?text=Delon+Wright",
-    photo_2: "https://via.placeholder.com/200x300?text=Wright+Alt",
-    detail: "2019 Champion with Raptors. Career assist/TO ratio: 2.5 (2022–23)."
-  },
+  firstName: "Karl-Anthony",
+  lastName: "Towns",
+  position: "C",
+  age: 29,
+  photo_1: "imgs/towns.webp",
+  photo_2: "https://via.placeholder.com/200x300?text=Towns+Alt",
+  detail: "2021 MVP. Career 30.7 PPG in Feb 2022. Classic stretch‐five skillset."
+},
+{
+  firstName: "P.J.",
+  lastName: "Tucker",
+  position: "PF",
+  age: 40,
+  photo_1: "imgs/tucker.avif",
+  photo_2: "https://via.placeholder.com/200x300?text=Tucker+Alt",
+  detail: "Known for offensive rebounds: 2.3 ORPG career. Defensive stopper at age 39."
+},
+{
+  firstName: "Anton",
+  lastName: "Watson",
+  position: "PF",
+  age: 24,
+  photo_1: "imgs/anton.avif",
+  photo_2: "https://via.placeholder.com/200x300?text=Watson+Alt",
+  detail: "Stellar college shot blocker at Gonzaga: 2.0 BPG (junior year). Sweeping PNR defender."
+},
+{
+  firstName: "Delon",
+  lastName: "Wright",
+  position: "PG",
+  age: 33,
+  photo_1: "imgs/wright.webp",
+  photo_2: "https://via.placeholder.com/200x300?text=Wright+Alt",
+  detail: "2019 Champion with Raptors. Career assist/TO ratio: 2.5 (2022–23)."
+}
 ];
